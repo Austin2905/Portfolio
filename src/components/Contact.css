@@ -1,0 +1,189 @@
+/* Contact.css */
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.location svg {
+    margin-right: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ffcb05;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: 0 0 10px rgba(255, 203, 5, 0.8);
+}
+/* Contact.css */
+.toast-container .Toastify__toast--success {
+    background: #444; /* dark background */
+    color: #fff; /* white text */
+    border-left: 5px solid #4caf50; /* green left border */
+}
+
+.toast-container .Toastify__toast--error {
+    background: #444; /* dark background */
+    color: #fff; /* white text */
+    border-left: 5px solid #f44336; /* red left border */
+}
+
+
+.message {
+    font-size: 1.5rem;
+    max-width: 800px;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    margin-left: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.quote {
+    color: #ffcb05;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-in-out;
+    text-shadow: 0 0 10px rgba(255, 203, 5, 0.8);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social a {
+    margin: 0 15px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    color: #ff4757;
+}
+
+.contact-icon {
+    margin: 0 15px;
+}
+
+.footer {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #a9a9a9;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+form input[type="submit"] {
+    background-color: #ffcb05;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+/* Background Animation */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px){
+    .title{
+        font-size: 1.2rem;
+    }
+    .message{
+        font-size: 1rem;
+    }
+}

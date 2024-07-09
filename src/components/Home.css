@@ -1,0 +1,91 @@
+/* src/Home.css */
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap);
+body {
+    margin: 0;
+    padding: 0;
+    background: #0A0A0A;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0 !important;
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif !important;
+    color: #F0F4F9;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home-title h1{
+    background-image: url(./images/back.jpg);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: hsla(0, 0%, 0%, 0);
+    animation: zoomout 10s ease 500ms forwards;
+    font-size: 10vw !important;
+    margin-bottom:-30px;
+    font-family: 'Red Hat Display', sans-serif !important;
+
+}
+.subhead {
+    font-size: 3.1vw !important;
+    color: #F0F4F9;
+    font-family: 'Playfair Display', serif;
+    text-align: start;
+    margin-bottom: 200px;
+
+}
+.home-button {
+    margin-top: -40px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 150px;
+}.home-button2 {
+    margin-top: -40px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 30px;
+}
+
+@keyframes zoomout {
+    from {
+        background-size: 40%;
+    }
+    to {
+        background-size: 10%;
+    }
+}
+
+@media (max-width: 768px){
+    .title h1{
+        text-align: center;
+        margin-right: 60px;
+    }
+    .subhead{
+        line-height: 50px;
+        text-align: start;
+    }
+    .home-button,.home-button2{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}

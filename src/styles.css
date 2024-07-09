@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.home,.hero,.skills,.timeline,.footer,.contact,.works{
+
+    background: Black;
+    animation: gradientBackground 5s ease infinite;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%; /* Start position of the background gradient */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position of the background gradient */
+    }
+    100% {
+        background-position: 0% 50%; /* End position of the background gradient */
+    }
+}
+.works {
+    display: flex;
+    height: 95vh;
+}
+
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .dark {
+        --color-background: #121212;
+        --color-foreground: #ffffff;
+        --color-primary: #bb86fc;
+        --color-secondary: #03dac6;
+        --color-danger: #cf6679;
+        --color-warning: #ffb74d;
+        --color-info: #2196f3;
+        --color-success: #4caf50;
+    }
+
+    .light {
+        --color-background: #ffffff;
+        --color-foreground: #000000;
+        --color-primary: #6200ee;
+        --color-secondary: #018786;
+        --color-danger: #b00020;
+        --color-warning: #ffa000;
+        --color-info: #0288d1;
+        --color-success: #388e3c;
+    }
+}
+
+.work-item {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00030c;
+    color: white;
+    padding: 10px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, #f3f0f0, #faf6f6);
+    color: black;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 20px 20px;
+    }
+    .back-to-top {
+        position: absolute;
+        z-index: -1;
+    }
+}
+

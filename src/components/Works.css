@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+.works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, #0d0d0d, #222222);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.card-slider {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.section-heading {
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    color: #ff6347;
+    margin-top: -90px;
+    animation: fadeIn 1s ease-in-out;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.section-heading2 {
+    font-family: "Pristina", cursive;
+    font-size: 2.6rem;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 0;
+}
+
+.card {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    margin: 40px auto 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-image-container {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 50px;
+    transition: transform 0.3s ease;
+}
+
+.card-image-container:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-description {
+    flex: 1;
+    text-align: left;
+}
+
+.card h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-links a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    color: #ff6347;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.card-links a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+    }
+    .slick-next{
+        left: 92%;
+        opacity: 0%;
+    }
+    .slick-prev{
+        left: -84%;
+        opacity: 0%;
+    }
+
+    .card-image-container {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .card-links {
+        flex-direction: column;
+    }
+
+    .card-links a {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+    .section-heading{
+        font-size: 3rem;
+    }
+    .section-heading2{
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
